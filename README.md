@@ -4,7 +4,7 @@ The code below is not a complete example. It uses STM32 HAL, but the library its
 
 This shows how you can setup a couple of timers and use callbacks to read and write from the ring buffer. Note that the timers are set to the same period but TIM6 (used for writing to the buffer) is lower priority than TIM7 (used for reading from the buffer).
 
-The dynamic version uses malloc. If this is too spicy, there is also static version.
+The dynamic version uses malloc. If this is too spicy, there is also static version. Use `USE_DYNAMIC_RING_BUFFER` and `USE_STATIC_RING_BUFFER` to switch the example usage.
 
 
 ```
